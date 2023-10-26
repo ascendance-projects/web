@@ -1,0 +1,38 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  "better-comments.tags": [
+    { "tag": "TODO", "color": "#00FFF2", "backgroundColor": "#001C1B" },
+    { "tag": "WARN", "color": "#FF8C00", "backgroundColor": "#1C0F00" },
+    { "tag": "FIXME", "color": "#F1411A", "backgroundColor": "#1C0803" },
+    {
+      "tag": "DANGER [SECURITY]",
+      "color": "#e55",
+      "backgroundColor": "#1C0404",
+      "bold": true
+    },
+    { "tag": "DANGER", "color": "#e55", "backgroundColor": "#1C0404" },
+    {
+      "tag": "INFO",
+      "color": "#3498DB",
+      "backgroundColor": "#07131C",
+      "italic": true
+    }
+  ],
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.defaultStyle": {
+    "borderRadius": "4px"
+  },
+  "todohighlight.keywords": [
+    { "text": "[TS]", "color": "#A7D3FF", "backgroundColor": "#25415C" },
+    { "text": "[REFACTOR]", "color": "#e55", "backgroundColor": "#0000" },
+    { "text": "[A11Y]", "color": "#5c5", "backgroundColor": "#0000" }
+  ]
+}
