@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "~/components/Navbar";
 import clsx from "clsx";
+import Footer from "~/components/Footer";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={clsx(dmSans.className, "bg-[#040504] text-white")}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

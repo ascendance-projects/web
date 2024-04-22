@@ -32,8 +32,18 @@ export default function Hero() {
       variants={parentVariant}
       initial="hidden"
       animate="visible"
-      className="bg-stars relative flex h-screen flex-col items-center justify-center overflow-clip bg-blend-hard-light"
+      className="relative flex h-screen flex-col items-center justify-center overflow-clip bg-blend-hard-light"
     >
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          maskImage:
+            "linear-gradient(to bottom, transparent, black, transparent)",
+        }}
+      >
+        <div className="absolute inset-0 bg-stars" />
+      </div>
+
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
