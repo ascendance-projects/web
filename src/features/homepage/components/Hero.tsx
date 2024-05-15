@@ -55,18 +55,18 @@ export default function Hero() {
       <div className="absolute left-0 -z-10 h-[400px] w-[700px] rounded-full bg-[#74E2C1]/25 blur-[250px]" />
       <motion.h1
         variants={childrenVariant}
-        className="text-3xl font-bold md:text-8xl"
+        className="text-5xl font-bold md:text-8xl"
       >
         Ascendance
       </motion.h1>
       <motion.p
         variants={childrenVariant}
-        className="mt-2 text-4xl font-bold text-[#99B09B]"
+        className="mt-2 text-center text-4xl font-bold text-[#99B09B]"
       >
         <span className="text-main">shape</span> your business
       </motion.p>
 
-      <Button asChild variant="default" size="lg" className="mt-8">
+      <Button asChild variant="secondary" size="lg" className="mt-8 text-lg">
         <motion.button variants={childrenVariant}>
           Take off with us
           <ArrowRight className="ml-2" />

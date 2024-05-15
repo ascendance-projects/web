@@ -1,4 +1,10 @@
+"use client";
+
+import type { Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import staggerChildren from "~/lib/transitions/staggerChildren";
+import translate from "~/lib/transitions/translate";
 
 const TEAM = [
   {
@@ -25,10 +31,21 @@ const TEAM = [
 
 export default function Team() {
   return (
-    <div className="container">
-      <div className="grid gap-16 md:grid-cols-4">
+    <div className="container py-32">
+      <h2 className="mb-32 text-center text-5xl font-bold">Our team</h2>
+      <motion.div
+        variants={staggerChildren(0.1)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="grid gap-16 md:grid-cols-4"
+      >
         {TEAM.map(member => (
-          <div key={member.name} className="flex flex-col justify-center">
+          <motion.div
+            variants={translate}
+            key={member.name}
+            className="flex flex-col justify-center"
+          >
             <Image
               alt={member.name}
               width={286}
@@ -42,9 +59,9 @@ export default function Team() {
             <p className="text-center text-xl font-bold text-zinc-400">
               {member.description}
             </p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

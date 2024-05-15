@@ -3,6 +3,8 @@ import FAQ from "~/features/homepage/components/FAQ";
 import Hero from "~/features/homepage/components/Hero";
 import Team from "~/features/homepage/components/Team";
 import WeAreResponsible from "~/features/homepage/components/WeAreResponsible";
+import Contact from "~/features/homepage/components/Contact";
+import WeLovePartnerships from "~/features/homepage/components/WeLovePartnerships";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Team />
       <WeAreResponsible />
       <FAQ />
+      <WeLovePartnerships />
+      <Contact />
     </main>
   );
 }
