@@ -66,6 +66,7 @@ export default function Cards() {
       variants={parentVariant}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       className="container mt-32 grid grid-cols-3 gap-8 pb-32"
     >
       {CARDS.map(card => (

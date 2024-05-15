@@ -2,11 +2,10 @@ import Link from "next/link";
 import GitHub from "./icons/GitHub";
 import Instagram from "./icons/Instagram";
 import X from "./icons/X";
-import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="py-24">
+    <footer className="bg-zinc-900/45 py-24">
       <div className="container">
         <div className="flex flex-wrap justify-between gap-8">
           {/* Navigate  */}

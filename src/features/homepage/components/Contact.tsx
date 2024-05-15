@@ -36,7 +36,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input {...field} placeholder="John Doe" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
