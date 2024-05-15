@@ -12,10 +12,10 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <h2 className="font-bold">Navigate</h2>
             <div className="flex flex-col gap-2">
-              <NavLink href="#about">Home</NavLink>
-              <NavLink href="#about">Offers</NavLink>
-              <NavLink href="#about">About us</NavLink>
-              <NavLink href="#about">Contact</NavLink>
+              <NavLink href="/">Home</NavLink>
+              <NavLink href="/offers">Offers</NavLink>
+              <NavLink href="/#about">About us</NavLink>
+              <NavLink href="/#contact">Contact</NavLink>
             </div>
           </div>
 
@@ -23,10 +23,10 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <h2 className="font-bold">Sections</h2>
             <div className="flex flex-col gap-2">
-              <NavLink href="#our-team">Our team</NavLink>
-              <NavLink href="#values">Values</NavLink>
-              <NavLink href="#values">Green coding</NavLink>
-              <NavLink href="#values">Hostinger</NavLink>
+              <NavLink href="/#our-team">Our team</NavLink>
+              <NavLink href="/#values">Values</NavLink>
+              <NavLink href="/#green-coding">Green coding</NavLink>
+              <NavLink href="/#host">Hostinger</NavLink>
             </div>
           </div>
 

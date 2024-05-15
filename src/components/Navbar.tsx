@@ -8,15 +8,15 @@ const LINKS = [
   },
   {
     name: "Offers",
-    url: "#offers",
+    url: "/offers",
   },
   {
     name: "About us",
-    url: "#about-us",
+    url: "/#about-us",
   },
   {
     name: "Contact",
-    url: "#contact",
+    url: "/#contact",
   },
 ] as const satisfies { name: string; url: string }[];
 
