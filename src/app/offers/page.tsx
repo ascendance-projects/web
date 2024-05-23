@@ -77,11 +77,11 @@ export default function Offers() {
 }
 
 const offerCard = cva(
-  "relative flex h-full flex-col rounded-xl border border-zinc-800 bg-zinc-900/55 p-12 transition-all",
+  "relative flex h-full flex-col rounded-xl border p-12 transition-all",
   {
     variants: {
       variant: {
-        default: "",
+        default: "border-zinc-800 bg-zinc-900/55",
         popular:
           "border-emerald-400 relative hover:-translate-y-8 -translate-y-4 bg-emerald-950/55 ring-4 ring-emerald-400 hover:bg-emerald-900/55",
         premium:
