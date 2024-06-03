@@ -22,5 +22,6 @@ module.exports = {
     'semi': 'off',
     'react/jsx-no-leaked-render': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/consistent-type-assertions': 'off',
   },
 };
