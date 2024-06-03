@@ -8,22 +8,25 @@ import translate from '~/lib/transitions/translate'
 const TEAM = [
   {
     name: 'Romain',
-    description: 'Lead dev & manager',
+    description: 'Front-end & Design',
     url: '/team/romain.png',
   },
   {
     name: 'Kévin',
-    description: 'Development & Design',
+    description: 'Development &\n' +
+      ' Design',
     url: '/team/kevin.png',
   },
   {
     name: 'Hugo H',
-    description: 'Server-side development',
+    description: 'Lead dev & Server-side\n' +
+      'development',
     url: '/team/hugoh.png',
   },
   {
     name: 'Hugo D',
-    description: 'Back-end & manager',
+    description: 'Back-end & \n' +
+      'Manager',
     url: '/team/hugod.png',
   },
 ] as const satisfies { name: string; description: string; url: string }[]
