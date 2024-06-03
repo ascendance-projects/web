@@ -1,9 +1,9 @@
-import Link from "next/link";
-import GitHub from "./icons/GitHub";
-import Instagram from "./icons/Instagram";
-import X from "./icons/X";
+import Link from 'next/link'
+import GitHub from './icons/GitHub'
+import Instagram from './icons/Instagram'
+import X from './icons/X'
 
-export default function Footer() {
+export default function Footer () {
   return (
     <footer className="bg-zinc-900/45 py-24">
       <div className="container">
@@ -39,18 +39,18 @@ export default function Footer() {
 
         <div className="my-16 flex items-center justify-end gap-8">
           <a href="/">
-            <GitHub />
+            <GitHub/>
           </a>
           <a href="">
-            <Instagram />
+            <Instagram/>
           </a>
           <a href="">
-            <X />
+            <X/>
           </a>
         </div>
 
         {/* divider */}
-        <div className="h-0.5 bg-[#74E2E2]/20 " />
+        <div className="h-0.5 bg-[#74E2E2]/20 "/>
 
         <div className="mt-16 flex flex-wrap justify-between gap-8">
           <span className="">2023 Ascendance © All rights reserved.</span>
@@ -62,16 +62,16 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
-function NavLink({
-  children,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Link>) {
+function NavLink ({
+                    children,
+                    ...props
+                  }: React.ComponentPropsWithoutRef<typeof Link>) {
   return (
     <Link {...props} className="text-zinc-400">
       {children}
     </Link>
-  );
+  )
 }

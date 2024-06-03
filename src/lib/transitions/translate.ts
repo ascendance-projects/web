@@ -1,4 +1,4 @@
-import type { Variants } from "framer-motion";
+import type { Variants } from 'framer-motion'
 
 const translate = {
   hidden: {
@@ -9,6 +9,6 @@ const translate = {
     y: 0,
     opacity: 1,
   },
-} satisfies Variants;
+} satisfies Variants
 
-export default translate;
+export default translate

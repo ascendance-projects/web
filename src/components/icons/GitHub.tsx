@@ -1,4 +1,4 @@
-export default function GitHub() {
+export default function GitHub () {
   return (
     <svg
       width="32"
@@ -15,9 +15,9 @@ export default function GitHub() {
       </g>
       <defs>
         <clipPath id="clip0_101_316">
-          <rect width="32" height="32" fill="white" />
+          <rect width="32" height="32" fill="white"/>
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

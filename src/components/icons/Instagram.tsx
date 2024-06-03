@@ -1,4 +1,4 @@
-export default function Instagram() {
+export default function Instagram () {
   return (
     <svg
       width="32"
@@ -12,5 +12,5 @@ export default function Instagram() {
         fill="white"
       />
     </svg>
-  );
+  )
 }

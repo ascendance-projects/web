@@ -1,34 +1,34 @@
-"use client";
+'use client'
 
-import { motion } from "framer-motion";
-import Image from "next/image";
-import staggerChildren from "~/lib/transitions/staggerChildren";
-import translate from "~/lib/transitions/translate";
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import staggerChildren from '~/lib/transitions/staggerChildren'
+import translate from '~/lib/transitions/translate'
 
 const TEAM = [
   {
-    name: "Romain",
-    description: "Lead dev & manager",
-    url: "/team/romain.png",
+    name: 'Romain',
+    description: 'Lead dev & manager',
+    url: '/team/romain.png',
   },
   {
-    name: "Kévin",
-    description: "Development & Design",
-    url: "/team/kevin.png",
+    name: 'Kévin',
+    description: 'Development & Design',
+    url: '/team/kevin.png',
   },
   {
-    name: "Hugo H",
-    description: "Server-side development",
-    url: "/team/hugoh.png",
+    name: 'Hugo H',
+    description: 'Server-side development',
+    url: '/team/hugoh.png',
   },
   {
-    name: "Hugo D",
-    description: "Back-end & manager",
-    url: "/team/hugod.png",
+    name: 'Hugo D',
+    description: 'Back-end & manager',
+    url: '/team/hugod.png',
   },
-] as const satisfies { name: string; description: string; url: string }[];
+] as const satisfies { name: string; description: string; url: string }[]
 
-export default function Team() {
+export default function Team () {
   return (
     <div className="container py-32">
       <h2 className="mb-32 text-center text-5xl font-bold">Our team</h2>
@@ -36,7 +36,7 @@ export default function Team() {
         variants={staggerChildren(0.1)}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{once: true}}
         className="grid gap-16 md:grid-cols-4"
       >
         {TEAM.map(member => (
@@ -62,5 +62,5 @@ export default function Team() {
         ))}
       </motion.div>
     </div>
-  );
+  )
 }

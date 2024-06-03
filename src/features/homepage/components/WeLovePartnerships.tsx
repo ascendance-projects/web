@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-export default function WeLovePartnerships() {
+export default function WeLovePartnerships () {
   return (
     <section className="relative mt-24 overflow-clip py-32">
-      <div className="absolute left-0 top-0 h-0.5 w-full bg-gradient-to-r from-transparent via-[#F57270]/50" />
-      <div className="absolute -z-10 h-32 w-full rounded-[100%] bg-[#F57270]/40 blur-[200px]" />
+      <div className="absolute left-0 top-0 h-0.5 w-full bg-gradient-to-r from-transparent via-[#F57270]/50"/>
+      <div className="absolute -z-10 h-32 w-full rounded-[100%] bg-[#F57270]/40 blur-[200px]"/>
 
       <div className="container">
         <h2 className="text-center text-5xl font-bold">
@@ -21,5 +21,5 @@ export default function WeLovePartnerships() {
         </div>
       </div>
     </section>
-  );
+  )
 }

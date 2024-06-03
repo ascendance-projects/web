@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import { motion } from "framer-motion";
-import Image from "next/image";
-import staggerChildren from "~/lib/transitions/staggerChildren";
-import translate from "~/lib/transitions/translate";
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import staggerChildren from '~/lib/transitions/staggerChildren'
+import translate from '~/lib/transitions/translate'
 
-export default function WeAreResponsible() {
+export default function WeAreResponsible () {
   return (
     <section className="relative mt-24 overflow-x-clip py-32">
       <Image
@@ -15,12 +15,12 @@ export default function WeAreResponsible() {
         width={741}
         height={734}
       />
-      <div className="absolute left-0 top-0 h-0.5 w-full bg-gradient-to-r from-transparent via-[#74E2E2]/50" />
-      <div className="absolute -z-10 h-32 w-full rounded-[100%] bg-[#74E2E2]/40 blur-[200px]" />
+      <div className="absolute left-0 top-0 h-0.5 w-full bg-gradient-to-r from-transparent via-[#74E2E2]/50"/>
+      <div className="absolute -z-10 h-32 w-full rounded-[100%] bg-[#74E2E2]/40 blur-[200px]"/>
 
       <div className="container">
         <h2 className="text-center text-5xl font-bold">
-          We are{" "}
+          We are{' '}
           <span className="bg-gradient-to-r from-[#74E27F] to-[#74E2E2] bg-clip-text text-transparent">
             responsible
           </span>
@@ -28,7 +28,7 @@ export default function WeAreResponsible() {
 
         <motion.div
           variants={staggerChildren(0.3)}
-          viewport={{ once: true }}
+          viewport={{once: true}}
           initial="hidden"
           whileInView="visible"
           className="mt-16 grid grid-cols-2 gap-4 *:bg-[#041212] *:p-16"
@@ -63,5 +63,5 @@ export default function WeAreResponsible() {
         </motion.div>
       </div>
     </section>
-  );
+  )
 }

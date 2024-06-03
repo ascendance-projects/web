@@ -17,8 +17,8 @@ interface FormFieldContextValue<
 }
 
 const FormFieldContext = React.createContext<FormFieldContextValue>({
-  name: "" as FieldPath<FieldValues>
-});
+  name: '' as FieldPath<FieldValues>
+})
 
 const FormField = <
   TFieldValues extends FieldValues = FieldValues,

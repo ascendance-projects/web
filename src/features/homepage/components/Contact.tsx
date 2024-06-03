@@ -1,20 +1,13 @@
-"use client";
+'use client'
 
-import { Button } from "~/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "~/components/ui/form";
-import { Input } from "~/components/ui/input";
-import { Textarea } from "~/components/ui/textarea";
-import useContactForm from "~/features/contact/hooks/useContactForm";
+import { Button } from '~/components/ui/button'
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, } from '~/components/ui/form'
+import { Input } from '~/components/ui/input'
+import { Textarea } from '~/components/ui/textarea'
+import useContactForm from '~/features/contact/hooks/useContactForm'
 
-export default function Contact() {
-  const { form, onSubmit } = useContactForm();
+export default function Contact () {
+  const {form, onSubmit} = useContactForm()
 
   return (
     <section className="relative mt-24 overflow-clip py-32">
@@ -31,13 +24,13 @@ export default function Contact() {
                 <FormField
                   control={form.control}
                   name="name"
-                  render={({ field }) => (
+                  render={({field}) => (
                     <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input {...field} placeholder="John Doe" />
+                        <Input {...field} placeholder="John Doe"/>
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage/>
                     </FormItem>
                   )}
                 />
@@ -47,7 +40,7 @@ export default function Contact() {
                 <FormField
                   control={form.control}
                   name="email"
-                  render={({ field }) => (
+                  render={({field}) => (
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
@@ -57,7 +50,7 @@ export default function Contact() {
                           placeholder="email@gmail.com"
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage/>
                     </FormItem>
                   )}
                 />
@@ -68,13 +61,13 @@ export default function Contact() {
               <FormField
                 control={form.control}
                 name="message"
-                render={({ field }) => (
+                render={({field}) => (
                   <FormItem>
                     <FormLabel>Message</FormLabel>
                     <FormControl>
-                      <Textarea {...field} placeholder="Your message" />
+                      <Textarea {...field} placeholder="Your message"/>
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage/>
                   </FormItem>
                 )}
               />
@@ -91,5 +84,5 @@ export default function Contact() {
         </Form>
       </div>
     </section>
-  );
+  )
 }

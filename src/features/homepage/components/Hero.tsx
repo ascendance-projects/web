@@ -1,10 +1,10 @@
-"use client";
+'use client'
 
-import type { Variants } from "framer-motion";
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import { Button } from "~/components/ui/button";
+import type { Variants } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import { Button } from '~/components/ui/button'
 
 const parentVariant = {
   visible: {
@@ -12,7 +12,7 @@ const parentVariant = {
       staggerChildren: 0.15,
     },
   },
-} satisfies Variants;
+} satisfies Variants
 const childrenVariant = {
   hidden: {
     // clipPath: "rect(0 100%, 100% 100%, 100% 100%, 0 100%)",
@@ -24,9 +24,9 @@ const childrenVariant = {
     y: 0,
     opacity: 1,
   },
-} satisfies Variants;
+} satisfies Variants
 
-export default function Hero() {
+export default function Hero () {
   return (
     <motion.header
       variants={parentVariant}
@@ -38,21 +38,21 @@ export default function Hero() {
         className="absolute inset-0 -z-10"
         style={{
           maskImage:
-            "linear-gradient(to bottom, transparent, black, transparent)",
+            'linear-gradient(to bottom, transparent, black, transparent)',
         }}
       >
-        <div className="absolute inset-0 bg-stars" />
+        <div className="absolute inset-0 bg-stars"/>
       </div>
 
       <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 2 }}
+        initial={{scale: 0.8, opacity: 0}}
+        animate={{scale: 1, opacity: 1}}
+        transition={{duration: 2}}
         className="absolute -left-40 -z-10 size-[800px]"
       >
-        <Image src="/earth.png" alt="" width={961} height={961} />
+        <Image src="/earth.png" alt="" width={961} height={961}/>
       </motion.div>
-      <div className="absolute left-0 -z-10 h-[400px] w-[700px] rounded-full bg-[#74E2C1]/25 blur-[250px]" />
+      <div className="absolute left-0 -z-10 h-[400px] w-[700px] rounded-full bg-[#74E2C1]/25 blur-[250px]"/>
       <motion.h1
         variants={childrenVariant}
         className="text-5xl font-bold md:text-8xl"
@@ -69,9 +69,9 @@ export default function Hero() {
       <Button asChild variant="secondary" size="lg" className="mt-8 text-lg">
         <motion.button variants={childrenVariant}>
           Take off with us
-          <ArrowRight className="ml-2" />
+          <ArrowRight className="ml-2"/>
         </motion.button>
       </Button>
     </motion.header>
-  );
+  )
 }

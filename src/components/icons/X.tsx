@@ -1,4 +1,4 @@
-export default function X() {
+export default function X () {
   return (
     <svg
       width="32"
@@ -12,5 +12,5 @@ export default function X() {
         fill="white"
       />
     </svg>
-  );
+  )
 }

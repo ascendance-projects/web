@@ -1,25 +1,25 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const LINKS = [
   {
-    name: "Home",
-    url: "/",
+    name: 'Home',
+    url: '/',
   },
   {
-    name: "Offers",
-    url: "/offers",
+    name: 'Offers',
+    url: '/offers',
   },
   {
-    name: "About us",
-    url: "/#about-us",
+    name: 'About us',
+    url: '/#about-us',
   },
   {
-    name: "Contact",
-    url: "/#contact",
+    name: 'Contact',
+    url: '/#contact',
   },
-] as const satisfies { name: string; url: string }[];
+] as const satisfies { name: string; url: string }[]
 
-export default function Navbar() {
+export default function Navbar () {
   return (
     <nav className="fixed left-0 top-0 z-50 w-full">
       <div className="container flex w-full items-start justify-between py-6">
@@ -38,5 +38,5 @@ export default function Navbar() {
         </ul>
       </div>
     </nav>
-  );
+  )
 }
