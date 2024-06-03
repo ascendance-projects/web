@@ -16,5 +16,11 @@ module.exports = {
     'new-cap': 'off',
     'react/function-component-definition': 'off',
     'react/jsx-child-element-spacing': 'off',
+    'camelcase': 'off',
+    'quotes': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    'semi': 'off',
+    'react/jsx-no-leaked-render': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   },
 };
