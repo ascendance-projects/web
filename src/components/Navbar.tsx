@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Logo from "./Logo";
 
 const LINKS = [
   {
@@ -24,7 +23,6 @@ export default function Navbar() {
   return (
     <nav className="fixed left-0 top-0 z-50 w-full">
       <div className="container flex w-full items-start justify-between py-6">
-        {/* <Logo /> */}
         Ascendance
         <ul className="flex gap-4">
           {LINKS.map(link => (
